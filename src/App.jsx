@@ -1,19 +1,17 @@
-import { useState } from "react";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelloPage } from "./pages/helloPage";
+import { Index } from "./pages/index";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div id="modal">
-        <h1>
-          Nombre:{" "}
-          <button onClick={() => setCount((count) => count + 1)}>
-            {count}
-          </button>
-        </h1>
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<Index />} />
+        <Route path="/hello" element={<HelloPage />} />
+        {/* <Route path="blogs" element={<Blogs />} /> */}
+        {/* <Route path="contact" element={<Contact />} /> */}
+        {/* <Route path="*" element={<FourOFour />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
