@@ -7,9 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      includeAssets: [
-        // Images et autres fichiers
-      ],
+      includeAssets: ["robots.txt"],
       manifest: {
         name: "Projet de fin d'année",
         short_name: "PFA",
