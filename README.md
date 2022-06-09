@@ -2,6 +2,15 @@
 
 Créer une pwa mobile-first
 
+## Commandes pré-faites:
+
+`CTRL+SHIFT+P` ou `CMD+SHIFT+P`
+- start : mets à jour les dépendances & commence un serveur pour voir le site
+- dev : Commence le serveur
+- install : mets à jours les dépendances
+- build : Créer un dossier avec les fichiers finaux (pas nécéssaire pour le déploiment dans notre cas)
+
+
 ## Dépendences : 
 
 - ReactJs(Vite)

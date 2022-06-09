@@ -27,6 +27,11 @@
             "label": "start",
             "type": "shell",
             "command": "npm i ; npm run dev"
+        },
+        {
+            "label": "preview",
+            "type": "shell",
+            "command": "npm run build ; npm run serve"
         }
         
     ]
