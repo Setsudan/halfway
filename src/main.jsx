@@ -11,7 +11,9 @@ Continue en téléchargeant le code pour le mode hors ligne
 import { registerSW } from "virtual:pwa-register";
 
 const updateSW = registerSW({
-  onNeedRefresh() {},
+  onNeedRefresh() {
+    window.history.forward(1);
+  },
   onOfflineReady() {
     alert("L'app est prête à tourner hors-ligne");
   },

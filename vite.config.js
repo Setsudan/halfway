@@ -14,8 +14,8 @@ export default defineConfig({
         "apple-touch-icon.png",
       ],
       manifest: {
-        name: "Projet de fin d'année",
-        short_name: "PFA",
+        name: "Jeune Chambre économique de Paris",
+        short_name: "JCEP",
         description: "Projet professionnel @hetic",
         theme_color: "#111111",
         icons: [
