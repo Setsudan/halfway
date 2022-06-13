@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HelloPage } from "./pages/helloPage";
+import { ApiTest } from "./pages/apitest";
 import { Index } from "./pages/index";
 
 /*
@@ -10,7 +10,7 @@ export default function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/" exact element={<Index />} />
-        <Route path="/hello" element={<HelloPage />} />
+        <Route path="/apitest" exact element={<ApiTest />} />
         {/* <Route path="*" element={<FourOFour />} /> */}
       </Routes>
     </BrowserRouter>

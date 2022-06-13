@@ -11,12 +11,12 @@
         {
             "label": "dev",
             "type": "shell",
-            "command": "npm run vite"
+            "command": "npx vite"
         },
         {
             "label": "build",
             "type": "shell",
-            "command": "npm run vite build"
+            "command": "npx vite build"
         },
         {
             "label": "install",
@@ -26,12 +26,12 @@
         {
             "label": "start",
             "type": "shell",
-            "command": "npm i ; npm run dev"
+            "command": "npm i ; npx vite"
         },
         {
             "label": "preview",
             "type": "shell",
-            "command": "npm run build ; npm run serve"
+            "command": "npx vite build ; npx vite preview"
         }
         
     ]

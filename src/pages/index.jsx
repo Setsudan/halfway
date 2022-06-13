@@ -1,9 +1,9 @@
 export const Index = () => {
   let status = "";
   if ("serviceWorker" in navigator) {
-    status = "ServiceWorker présent";
+    status = "✨ServiceWorker présent✨";
   } else {
-    status = "serviceWorker absent";
+    status = "☠️ serviceWorker absent ☠️";
   }
   return (
     <>
