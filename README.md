@@ -37,6 +37,9 @@ Problématiques prise en compte
   - Etre capable de trouver les pme sur l'app et de réserver des produits en ligne(Solutions e-commerce)
   - Pour les entreprise être capables de de modifié les informations sur son magasins, de voir les commandes faites etc.
   - Recevoir des notifications si manifestations ou travaux le lendemain ou plus tard dans la semaine (Solutions travaux et manifs)
+- Centre commercial:
+  - Etre capable de soutenir des producteurs locaux indépendants
+  - Soutenir l'environnement en participant à l'économie circulaire.
 
 ---
 
