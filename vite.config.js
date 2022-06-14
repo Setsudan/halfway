@@ -8,16 +8,19 @@ export default defineConfig({
     react(),
     VitePWA({
       includeAssets: [
-        // Images et autres fichiers
+        "favicon.svg",
+        "favicon.ico",
+        "robots.txt",
+        "apple-touch-icon.png",
       ],
       manifest: {
-        name: "Projet de fin d'année",
-        short_name: "PFA",
+        name: "Jeune Chambre économique de Paris",
+        short_name: "JCEP",
         description: "Projet professionnel @hetic",
         theme_color: "#111111",
         icons: [
           // Icones de l'application
-          /* {
+          {
             src: "pwa-192x192.png",
             sizes: "192x192",
             type: "image/png",
@@ -32,9 +35,14 @@ export default defineConfig({
             sizes: "512x512",
             type: "image/png",
             purpose: "any maskable",
-          }, */
+          },
         ],
       },
+      workbox: {
+        sourcemap: true,
+        cleanupOutdatedCaches: true,
+      },
+      registerType: "autoUpdate",
     }),
   ],
 });
