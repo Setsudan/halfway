@@ -40,6 +40,11 @@ Problématiques prise en compte
 
 ---
 
+### Stationnement:
+
+- Avec une map qui répertiori les artisants / commerçants,
+- Faire un parcours à réaliser en vélo/trotinette pour découvrir les artisants / commerçants par rapport à ce que le client recherche (nourriture, musée...)
+
 
 
 ## Déroulé
