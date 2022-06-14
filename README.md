@@ -40,6 +40,10 @@ Problématiques prise en compte
 
 ---
 
+- Centre commercial:
+  - Etre capable de soutenir des producteurs locaux indépendants. (Solution e-commerce)
+  - Soutenir l'environnement en participant à l'économie circulaire. (Solution e-commerce)
+
 
 
 ## Déroulé
