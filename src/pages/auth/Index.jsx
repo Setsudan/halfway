@@ -19,6 +19,10 @@ export const AuthIndex = () => {
         }}
       >
         {isClient ? "Créer un compte" : "Se connecter"}
+        <hr />
+        <span>se connecter avec Google</span>
+        <span>se connecter avec Apple</span>
+        <span>se connecter avec Facebook</span>
       </span>
     </>
   );
