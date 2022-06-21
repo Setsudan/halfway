@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ApiTest } from "./pages/apitest";
 import { Index } from "./pages/index";
 import { AuthIndex, Auth } from "./pages/auth/Index";
-const loggedIn = false;
+
+const loggedIn = true;
 /*
 Fonction répartissant les chemin et les pages
 */
