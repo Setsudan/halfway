@@ -34,7 +34,7 @@ Problématiques prise en compte
 - E-commerce && Livraison gratuites:
   - Etre capable de chercher un produit sur l'application && de faire du click && collect. Payement en avance pour éviter les fraudes et trolls, pas besoin de se connecter on envoie un mail avec le ticket de reçu (API stripe)
 - Digitalisation : 
-  - Etre capable de trouver les pme sur l'app et de réserver des produits en ligne(Solutions e-commerce)
+  - Etre capable de trouver les pme sur l'app(map/geolocalisation) et de réserver des produits en ligne(Solutions e-commerce)
   - Pour les entreprise être capables de de modifié les informations sur son magasins, de voir les commandes faites etc.
   - Recevoir des notifications si manifestations ou travaux le lendemain ou plus tard dans la semaine (Solutions travaux et manifs)
 

@@ -14,9 +14,10 @@ export default defineConfig({
         "apple-touch-icon.png",
       ],
       manifest: {
-        name: "Jeune Chambre économique de Paris",
-        short_name: "JCEP",
-        description: "Projet professionnel @hetic",
+        name: "HalfWay",
+        short_name: "HW",
+        description:
+          "Application de livraison des petis commercant et artisants",
         theme_color: "#111111",
         icons: [
           // Icones de l'application
