@@ -27,7 +27,6 @@ export function SignUp() {
   };
   return (
     <>
-      <h1>Bienvenue chez nous !</h1>
       <label htmlFor="lastName">Nom de famille</label>
       <input
         type="text"

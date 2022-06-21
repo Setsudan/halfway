@@ -15,7 +15,6 @@ export const Login = () => {
   };
   return (
     <>
-      <h1>Bon retour parmis nous !</h1>
       <input type="text" name="uid" value={uid} onChange={handleUid} />
       <input
         type="password"
