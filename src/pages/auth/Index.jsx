@@ -2,7 +2,7 @@ import AppleLogo from "../../img/apple.png";
 import FacebookLogo from "../../img/facebook.png";
 import GoogleLogo from "../../img/google.png";
 import { useState } from "react";
-import { SignUp } from "./Signup";
+import SignUpPage from "./Signup";
 import { Login } from "./Login";
 export const AuthIndex = () => {
   const [lambda, setLambda] = useState(true);
@@ -58,7 +58,7 @@ export const Auth = () => {
   };
   return (
     <>
-      {auth ? <Login /> : <SignUp />}
+      {auth ? <Login /> : <SignUpPage />}
       <span onClick={() => toggleAuth()}>
         {auth ? "Créer un compte" : "Se connecter"}
       </span>

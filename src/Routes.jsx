@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ApiTest } from "./pages/apitest";
-import { Index } from "./pages/index";
+import { Index } from "./pages/Client/index";
 import { AuthIndex, Auth } from "./pages/auth/Index";
 
 const loggedIn = true;
@@ -12,7 +11,6 @@ export default function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/" exact element={loggedIn ? <Index /> : <AuthIndex />} />
-        <Route path="/apitest" exact element={<ApiTest />} />
         <Route path="/auth" exact element={<Auth />} />
         {/* <Route path="*" element={<FourOFour />} /> */}
       </Routes>

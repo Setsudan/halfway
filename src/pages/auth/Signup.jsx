@@ -1,5 +1,5 @@
 import { useState } from "react";
-export default function SignUp() {
+export default function SignUpPage() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
