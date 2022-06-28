@@ -2,19 +2,34 @@
 
 export const ShopCard = ({
   shopName,
-  adress,
-  description,
-  schedule,
+  /* adress, */
+  /* description, */
+  /* schedule , */
   category,
 }) => {
   return (
     <>
       <div className="shopCard">
-        <img src={shopName + ".png"} alt="" className="shopImg" />
-        <h3 className="shopName">{shopName}</h3>
-        <span className="adress">{adress}</span>
-        <p className="description">{description}</p>
-        <div>
+        <img
+          src={
+            "https://vrhpddolravjrcrtxbor.supabase.co/storage/v1/object/public/image/" +
+            shopName +
+            ".png"
+          }
+          alt=""
+          className={"shopImg" + " " + category}
+        />
+        <span className="shopName">{shopName}</span>
+        <span className="distance">
+          à{" "}
+          {
+            // Random number between 15 and 200
+            Math.floor(Math.random() * (200 - 15 + 1)) + 15
+          }
+          mètre de vous
+        </span>
+        {/* <p className="description">{description}</p> */}
+        {/* <div>
           <h3>lundi</h3>
           <p>{schedule.lundi}</p>
           <h3>mardi</h3>
@@ -29,10 +44,9 @@ export const ShopCard = ({
           <p>{schedule.samedi}</p>
           <h3>dimanche</h3>
           <p>{schedule.dimanche}</p>
-        </div>
-        <p className="category">{category}</p>
+        </div> */}
+        {/* <p className="category">{category}</p> */}
       </div>
     </>
   );
 };
-

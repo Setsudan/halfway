@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ClientNav = () => {
   return (
-    <div className="bar">
+    <div className="navbar">
       <Link to="">
         <img src="https://www.svgrepo.com/show/9399/home.svg" alt="#" />
       </Link>
@@ -20,7 +20,7 @@ const ClientNav = () => {
 };
 const DeliveryNav = () => {
   return (
-    <div className="bar">
+    <div className="navbar">
       <Link to="">
         <img src="#" alt="#" />
       </Link>
@@ -38,7 +38,7 @@ const DeliveryNav = () => {
 };
 const BrandNav = () => {
   return (
-    <div className="bar">
+    <div className="navbar">
       <Link to="">
         <img src="#" alt="#" />
       </Link>
