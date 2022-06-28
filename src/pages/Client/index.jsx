@@ -22,6 +22,7 @@ export const Index = () => {
         }
       });
   }, []);
+  console.table(data[0]["schedule"]);
   if (loading) {
     return <div>Loading...</div>;
   } else {

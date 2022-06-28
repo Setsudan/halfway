@@ -1,13 +1,3 @@
-const Nav = ({ type }) => {
-  if (type == "brand") {
-    return <BrandNav />;
-  } else if (type == "delivery") {
-    return <DeliveryNav />;
-  } else {
-    return <ClientNav />;
-  }
-};
-
 const ClientNav = () => {
   return (
     <>
@@ -61,4 +51,14 @@ const BrandNav = () => {
       </Link>
     </>
   );
+};
+
+export const Nav = ({ type }) => {
+  if (type == "brand") {
+    return <BrandNav />;
+  } else if (type == "delivery") {
+    return <DeliveryNav />;
+  } else {
+    return <ClientNav />;
+  }
 };
