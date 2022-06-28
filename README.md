@@ -35,4 +35,4 @@ Application de livraison pour les petits commercant
 - json les donnée des magasins
 > Implémenter les scan du QR code et la création des QRCODE par rapport au UID
 > Créer les données pour les listes des commandes pour les magasins et pour les utilisateurs
-> Implémenter la fonction de maps pour les livreurs en créant des trajets entre tout les magasins
+> Implémenter la fonction de maps pour les livreurs en créant des trajets entre tout les magasinsP
