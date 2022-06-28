@@ -1,24 +1,26 @@
+import { Link } from "react-router-dom";
+
 const ClientNav = () => {
   return (
-    <>
+    <div className="bar">
       <Link to="">
-        <img src="#" alt="#" />
+        <img src="https://www.svgrepo.com/show/9399/home.svg" alt="#" />
       </Link>
       <Link to="">
-        <img src="#" alt="#" />
+        <img src="https://www.svgrepo.com/show/299682/qr-code.svg" alt="#" />
       </Link>
       <Link to="">
-        <img src="#" alt="#" />
+        <img src="https://www.svgrepo.com/show/42768/cart.svg" alt="#" />
       </Link>
       <Link to="">
-        <img src="#" alt="#" />
+        <img src="https://www.svgrepo.com/show/361411/account.svg" alt="#" />
       </Link>
-    </>
+    </div>
   );
 };
 const DeliveryNav = () => {
   return (
-    <>
+    <div className="bar">
       <Link to="">
         <img src="#" alt="#" />
       </Link>
@@ -31,12 +33,12 @@ const DeliveryNav = () => {
       <Link to="">
         <img src="#" alt="#" />
       </Link>
-    </>
+    </div>
   );
 };
 const BrandNav = () => {
   return (
-    <>
+    <div className="bar">
       <Link to="">
         <img src="#" alt="#" />
       </Link>
@@ -49,7 +51,7 @@ const BrandNav = () => {
       <Link to="">
         <img src="#" alt="#" />
       </Link>
-    </>
+    </div>
   );
 };
 
