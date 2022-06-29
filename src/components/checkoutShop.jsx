@@ -1,4 +1,4 @@
-function CheckoutShop({ item, index }) {
+export const CheckoutShop = ({ item, index }) => {
   return (
     <>
       <div key={index} id={index} className="command-item">
@@ -11,4 +11,4 @@ function CheckoutShop({ item, index }) {
       </div>
     </>
   );
-}
+};

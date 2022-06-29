@@ -1,4 +1,5 @@
 // Page where a list of all commanded product will be shown with their status
+import { CheckoutShop } from "../../components/CheckoutShop";
 export const CheckoutList = () => {
   // Exemple de ce a quoi la la liste devra ressembler
   const checkoutList = [

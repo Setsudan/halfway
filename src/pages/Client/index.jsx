@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../../api/_init";
-import { getPosition } from "../../func/getPos";
+//import { getPosition } from "../../func/getPos";
 import { ShopCard } from "../../components/ShopCard";
-import { Nav } from "../../components/NavBar";
 
 // Default Page
 export const Index = () => {
   // on page load call supabase to get data from table shop
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  console.log(getPosition());
   useEffect(() => {
     supabase
       .from("store")
@@ -106,7 +104,6 @@ export const Index = () => {
               })
           }
         </div>
-        <Nav type={"texte"} />
       </main>
     );
   }

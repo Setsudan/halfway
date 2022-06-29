@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 const ClientNav = () => {
   return (
     <div className="navbar">
-      <Link to="">
+      <Link to="/">
         <img src="https://www.svgrepo.com/show/9399/home.svg" alt="#" />
       </Link>
-      <Link to="">
+      <Link to="/personnalcode">
         <img src="https://www.svgrepo.com/show/299682/qr-code.svg" alt="#" />
       </Link>
-      <Link to="">
+      <Link to="checkoutlist">
         <img src="https://www.svgrepo.com/show/42768/cart.svg" alt="#" />
       </Link>
-      <Link to="">
+      <Link to="profile">
         <img src="https://www.svgrepo.com/show/361411/account.svg" alt="#" />
       </Link>
     </div>
