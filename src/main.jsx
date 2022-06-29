@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Router from "./Routes";
-import "./styles/index.css";
+import "./styles/index.scss";
 
 // Pwa code
 /*
@@ -27,6 +27,11 @@ const updateSW = registerSW({
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Router />
+    {/* If screen width is superior to 600px then we put a message */}
+    {window.innerWidth < 600 ? (
+      <Router />
+    ) : (
+      <h1>Ce site est prévu pour une utilisation sur mobile</h1>
+    )}
   </React.StrictMode>
 );
