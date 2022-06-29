@@ -4,9 +4,16 @@ Créer une pwa mobile-first
 
 ## Commandes pré-faites:
 
+Pour faciliter l'accès à chacun des taches on été pré-faites.
+Ces taches peuvent êtres retrouvées dans `.vscode/tasks.json`
+### Pour utliser les tâches
+
 `CTRL+SHIFT+P` ou `CMD+SHIFT+P`
-- start : mets à jour les dépendances & commence un serveur pour voir le site
-- dev : Commence le serveur
+
+**"Run task"** :
+
+- start : Installe/Mets à jour les dépences et lance le serveur
+- dev : lance le serveur
 - install : mets à jours les dépendances
 - build : Créer un dossier avec les fichiers finaux (pas nécéssaire pour le déploiment dans notre cas)
 
@@ -29,10 +36,61 @@ Jeune chambre économique de Paris
 
 Application de livraison pour les petits commercant
 
-## TODO
+## Structure du dossier
 
-- Stylisation du site
-- json les donnée des magasins
-> Implémenter les scan du QR code et la création des QRCODE par rapport au UID
-> Créer les données pour les listes des commandes pour les magasins et pour les utilisateurs
-> Implémenter la fonction de maps pour les livreurs en créant des trajets entre tout les magasinsP
+```
+|- .github
+|     |-workflow (Deprecated)
+|- .vscode
+|     |-tasks.json -> Taches à utiliser pour le projet
+|- public
+|     |-Fichiers nécéssaire pour le bon fonctionnement de la PWA
+|-src
+|    |-api
+|    |    
+|    |-components
+|    |     |
+|    |     |-> Client
+|    |     |   |
+|    |     |   |-> Nearby.jsx (Pour les magasins proches)
+|    |     |   |
+|    |     |   |-> Popular.jsx (Pour les magasins populaire)
+|    |     |   |
+|    |     |   |-> Recent.jsx (Pour les magasins déjà visité récemment)
+|    |     |   
+|    |     |-> NavBar.jsx (Navbar pour les différentes pages)
+|    |     |
+|    |     |-> CheckoutShop.jsx (Components pour la liste des commandes)
+|    |     |
+|    |     |-> shopCard.jsx (Components pour la liste des magasins)
+|    |-func
+|    |     |-> fonctions pouvant être utiliser pour la pwa
+|    |-img -> icones/images pour le projet censé être remplacé plus tard
+|    |-pages
+|    |    |-> auth -> Pour l'authentification
+|    |    |
+|    |    |-> Client -> Pour les utilisateurs lambda
+|    |    |
+|    |    |-> DeliveryGuy -> Pour les livreurs
+|    |    |
+|    |    |-> Shop -> Pour les magasins
+|    |
+|    |-styles
+|    |    |->index.scss -> Fichier global de la stylisation
+|    |    |
+|    |    |->index.css -> résultat du scss
+|    |
+|    |-main.jsx -> Fichier principale du projet
+|    |
+|    |-Routes.jsx -> Router du projet avec (pour l'instant fausse)détection de la connection
+|
+|-.gitattributes/gitignore -> Fichier pour le repo github
+|
+|- index.html -> Racine du projet
+|
+|- package.json/package-lock.json -> pour les nodes_modules
+|
+|- vercel.json -> Pour le deploiment sur vercel
+|
+|- vite.config.js -> config de vite
+```
