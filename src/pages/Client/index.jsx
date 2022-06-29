@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../../api/_init";
+import { Nearby } from "../../components/pages/Client/Nearby";
+import { Popular } from "../../components/pages/Client/Popular";
+import { Recent } from "../../components/pages/Client/Recent";
 //import { getPosition } from "../../func/getPos";
-import { ShopCard } from "../../components/ShopCard";
 
 // Default Page
 export const Index = () => {
@@ -37,73 +39,11 @@ export const Index = () => {
             <button>Chercher</button>
           </div>
         </div>
-        {/* <Category/> */}
-        {/* Use src/components/shopCard.jsx for each section */}
-        {/* <Nearby/> */}
-        <h2>Commerce à proximité</h2>
-        <div className="nearby-list">
-          {data.map((shop, index) => {
-            // long et lat de place de nation paris
-            const lat = 48.856614;
-            const long = 2.3522219;
-            if (long - long + 0.004 <= 0.05 && lat - lat - 0.0005 <= 0.05) {
-              return (
-                <ShopCard
-                  key={index}
-                  shopName={shop.name}
-                  adress={shop.adress}
-                  description={shop.description}
-                  /* schedule={shop.schedule} */
-                  category={shop.category}
-                />
-              );
-            }
-          })}
-        </div>
-        {/* <Popular/> */}
-        <h2>Commerce du moment</h2>
-        <div className="popular-list">
-          {
-            // Return 10 random shops from data
-            data
-              .sort(() => Math.random() - 0.5)
-              .slice(0, 10)
-              .map((shop, index) => {
-                return (
-                  <ShopCard
-                    key={index}
-                    shopName={shop.name}
-                    adress={shop.adress}
-                    description={shop.description}
-                    /* schedule={shop.schedule} */
-                    category={shop.category}
-                  />
-                );
-              })
-          }
-        </div>
-        {/* <Recent/> */}
-        <h2>Vos récents magasins</h2>
-        <div className="recent-list">
-          {
-            // Return 10 random shops from data
-            data
-              .sort(() => Math.random() - 0.5)
-              .slice(0, 10)
-              .map((shop, index) => {
-                return (
-                  <ShopCard
-                    key={index}
-                    shopName={shop.name}
-                    adress={shop.adress}
-                    description={shop.description}
-                    /* schedule={shop.schedule} */
-                    category={shop.category}
-                  />
-                );
-              })
-          }
-        </div>
+        {/* <Category/> 
+        Show different categories of shops */}
+        <Nearby data={data} />
+        <Popular data={data} />
+        <Recent data={data} />
       </main>
     );
   }
