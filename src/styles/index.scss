@@ -26,8 +26,11 @@ body {
   outline: $green 2px solid;
   margin: 0 2vw;
 }
+
 @import "./components/Auth";
 @import "./components/navbar";
 @import "./components/client/Home";
 @import "./components/client/CommandList";
 @import "./components/client/Profile";
+@import "./components/client/PersonnalCode";
+

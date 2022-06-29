@@ -9,10 +9,29 @@
   h2 {
     font-size: 1.5rem;
   }
+  .sousTitreCheckout{
+    color: #8FDD92;
+  }
+  .buttonCheckout {
+    margin: auto;
+    background: rgb(208, 244, 208);
+    border: 3px solid rgb(208, 244, 208);
+    border-radius: 12px;
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
   .command-list {
     display: flex;
     flex-direction: column;
     .command-item {
+      .command-item-image {
+        width: 160px;
+        height: auto;
+        margin:  0 0.5vw;
+        object-fit: cover;
+    }
+    
       display: flex;
       flex-direction: row;
       margin: 2vh 0;

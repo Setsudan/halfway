@@ -6,7 +6,7 @@ export const CheckoutShop = ({ item, index }) => {
         <div className="command-item-info">
           <h2>{item.name}</h2>
           <p>Déposé il y a {item.waitingSince} minutes</p>
-          <p>{item.status}</p>
+          <button className="buttonCheckout">{item.status}</button>
         </div>
       </div>
     </>

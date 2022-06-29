@@ -177,6 +177,18 @@ body {
 #Client-CommandList h2 {
   font-size: 1.5rem;
 }
+#Client-CommandList .sousTitreCheckout {
+  color: #8FDD92;
+}
+#Client-CommandList .buttonCheckout {
+  margin: auto;
+  background: rgb(208, 244, 208);
+  border: 3px solid rgb(208, 244, 208);
+  border-radius: 12px;
+  width: 40%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 #Client-CommandList .command-list {
   display: flex;
   flex-direction: column;
@@ -185,6 +197,13 @@ body {
   display: flex;
   flex-direction: row;
   margin: 2vh 0;
+}
+#Client-CommandList .command-list .command-item .command-item-image {
+  width: 160px;
+  height: auto;
+  margin: 0 0.5vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #Client-CommandList .command-list .command-item .command-item-info {
   display: flex;
@@ -233,4 +252,19 @@ body {
 #main-info .info input:hover, #main-info .info input:focus {
   border-bottom: 3px solid #8fdd92;
   outline: none;
+}
+
+.TitreQR {
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.SousTitreQR {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.unique-code {
+  border: 10px solid #8FDD92;
+  border-radius: 12px;
 }/*# sourceMappingURL=index.css.map */
