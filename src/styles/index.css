@@ -80,6 +80,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  background: #efefef;
 }
 .navbar a img {
   height: 35px;
