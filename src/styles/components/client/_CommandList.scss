@@ -20,6 +20,52 @@
     width: 40%;
     margin-top: 5%;
     margin-bottom: 5%;
+    width: 210px;
+    height: 45px;
+    font-size: large;
+  }
+  .button1{
+    color:#3c9840;
+    background: #8FDD92;
+    border: none;
+    border-radius: 12px;
+    width: 140px;
+    padding: 5px 5px;
+    margin-top: 15px;
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+  }
+h5{
+  margin-top:10px;
+}
+.button2{
+    color:#8a62e0;
+    padding: 5px 5px;
+    background: #AF9BDA;
+    border: none;
+    border-radius: 12px;
+    width: 140px;
+    margin-top: 15px;
+   /*  margin-top: 5%;
+    margin-bottom: 5%; */
+}
+.button3{
+  color:#407874;
+  padding: 5px 5px;
+  background: #93D5D1;
+  border: none;
+  border-radius: 12px;
+  width: 140px;
+  margin-top: 15px;
+ /*  margin-top: 5%;
+  margin-bottom: 5%; */
+}
+  .buttonLivraison{
+    margin: auto;
+    background: rgb(208, 244, 208);
+    border: 3px solid rgb(208, 244, 208);
+    border-radius: 12px;
+    color: #8FDD92;
   }
   .command-list {
     display: flex;
