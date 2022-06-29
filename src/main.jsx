@@ -24,7 +24,8 @@ const updateSW = registerSW({
       }, 60 * 60 * 1000);
   },
 });
-
+// on page load call updateSW
+updateSW();
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* If screen width is superior to 600px then we put a message */}

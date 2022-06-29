@@ -19,7 +19,10 @@ export const Index = () => {
         if (!error) {
           const shopList = res.data;
           setData(shopList);
-          setLoading(false);
+          // wait 3 seconds to show the page
+          setTimeout(() => {
+            setLoading(false);
+          }, 3000);
         } else {
           console.warn(error);
         }
