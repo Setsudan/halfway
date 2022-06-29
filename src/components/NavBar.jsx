@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
+// all navbar depending on who you are
 
+// For client
 const ClientNav = () => {
   return (
     <div className="navbar">
@@ -18,6 +20,7 @@ const ClientNav = () => {
     </div>
   );
 };
+// For delivery guy
 const DeliveryNav = () => {
   return (
     <div className="navbar">
@@ -36,6 +39,7 @@ const DeliveryNav = () => {
     </div>
   );
 };
+// for shop
 const BrandNav = () => {
   return (
     <div className="navbar">

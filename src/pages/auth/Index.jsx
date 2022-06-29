@@ -5,6 +5,8 @@ import { useState } from "react";
 import SignUpPage from "./Signup";
 import { Login } from "./Login";
 export const AuthIndex = () => {
+  // lambda means good old connection with mail and password without using third-parties
+  // so if lambda is true, we will display the login page that use the email-password type of login/register page
   const [lambda, setLambda] = useState(true);
   const toggleLambda = () => {
     if (lambda) {
@@ -45,7 +47,8 @@ export const AuthIndex = () => {
     </main>
   );
 };
-
+// This decides what to display
+// Either the login page or the signup page
 export const Auth = () => {
   const [auth, setAuth] = useState(false);
 

@@ -1,4 +1,5 @@
 export const CheckoutShop = ({ item, index }) => {
+  // Just a components ot render a list of all the shops where we bought something
   return (
     <>
       <div key={index} id={index} className="command-item">

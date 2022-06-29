@@ -1,3 +1,7 @@
+/*
+That's where we were supposed to store the data but we didn't and I dont know why
+*/
+
 /* import { useState, useEffect } from "react";
 import { supabase } from "./_init";
 export const Data = () => {

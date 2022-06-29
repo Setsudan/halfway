@@ -28,6 +28,10 @@ export const ShopCard = ({
           }
           mètre de vous
         </span>
+        {/*
+        We would have written the code to show the schedule
+        of the shop when user click on the card
+        */}
         {/* <p className="description">{description}</p> */}
         {/* <div>
           <h3>lundi</h3>
