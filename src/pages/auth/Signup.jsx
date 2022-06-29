@@ -1,4 +1,93 @@
 import { useState } from "react";
+
+// Same as the login page, this is a dummy dum page
+// It's not fonctionnal at all it's just here to be here
+// This is how we would have done it for it to work
+// Go line 91 to see the code that is shown on the page (CTRL + g)
+/*
+Signup using supabase 
+export const Signup = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+  const [passwordConfirm, setPasswordConfirm] = useState("");
+  const [passwordMatch, setPasswordMatch] = useState(false);
+
+  call supabase to signup on button submit
+  const signup = () => {
+    setLoading(true);
+    supabase
+      .auth()
+      .signup(email, password)
+      .then(() => {
+        setLoading(false);
+        setSuccess("Vous êtes bien inscrit");
+      })
+      .catch((err) => {
+        setLoading(false);
+        setError(err.message);
+      });
+  }
+  return(
+    <main id="SignupPage">
+      <h1>
+        Half<span>Way</span>
+      </h1>
+      <form>
+        <label htmlFor="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }
+          }
+        />
+        <label htmlFor="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          value={password}
+          onChange={(e) => {
+            setPassword(e.target.value);
+          }
+          }
+        />
+        <label htmlFor="passwordConfirm">Confirm Password</label>
+        <input
+          type="password"
+          id="passwordConfirm"
+          name="passwordConfirm"
+          value={passwordConfirm}
+          onChange={(e) => {
+            setPasswordConfirm(e.target.value);
+          }
+          }
+        />
+        <button type="submit" onClick={() => {
+          setLoading(true);
+          signup();
+          setTimeout(() => {
+            setLoading(false);
+          }, 2000);
+        }
+        }>
+          {loading ? "Loading..." : "Signup"}
+        </button>
+      </form>
+      <p>{error}</p>
+      <p>{success}</p>
+    </main>
+  );
+}
+  )
+*/
+
 export default function SignUpPage() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");

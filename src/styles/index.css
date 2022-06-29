@@ -72,7 +72,7 @@ body {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100vw;
@@ -80,6 +80,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  background: #efefef;
 }
 .navbar a img {
   height: 35px;
