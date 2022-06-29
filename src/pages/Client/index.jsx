@@ -30,7 +30,10 @@ export const Index = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return  <div className="LogoTab">
+                <img src="https://zupimages.net/up/22/26/brdd.png" alt="logo-1-1-removebg-preview" border="0" />
+            </div>
+    ;
   } else {
     return (
       <main id="ClientHome">
@@ -44,9 +47,13 @@ export const Index = () => {
           // then show all the result in a .map function
         }
         <div className="search-bar">
+        
+          {/* Le logo */}    
+                
           <div className="searchbar-content">
-            <input type="text" placeholder="Cherchez votre magasin !" />
-            <button>Chercher</button>
+            <input  type="text" placeholder="Cherchez votre magasin !" />
+            <img className="loupe" src="https://www.svgrepo.com/show/25222/magnifying-glass.svg" alt="loupe" />
+            {/* <button>Chercher</button> */}
           </div>
         </div>
         {/* <Category/> 
