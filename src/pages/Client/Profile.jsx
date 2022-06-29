@@ -1,5 +1,6 @@
 // Page where you can modify user information
 import { useState } from "react";
+
 export const Profile = () => {
   // useState to check if user has modified values of inputs
   const [modified, setModified] = useState(false);
@@ -11,11 +12,27 @@ export const Profile = () => {
     adress: "",
     password: "",
   });
+  // generate random uid
+  /* Random Uid will be replaced later on to be the same as the user uid */
+  const uid =
+    Math.random().toString(36).substring(2, 15) +
+    Math.random().toString(36).substring(2, 15);
   return (
     <>
       <main id="main-info">
-        <img src="" alt="" className="pfp" />
+        <div className="pfp">
+          <img
+            src={
+              "https://avatars.dicebear.com/api/" + "human" + "/" + uid + ".svg"
+            }
+            alt=""
+          />
+        </div>
         <div className="info">
+          {/* Form that will have the values of the user as default
+            Since there is not account yet, there is no default values.
+            Default values will be set when auth with supabase is done
+          */}
           <label htmlFor="FirstName">FirstName</label>
           <input
             type="text"

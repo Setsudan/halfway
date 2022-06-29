@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dicebear/avatars": "^4.10.3",
+    "@dicebear/croodles-neutral": "^4.10.3",
     "@supabase/supabase-js": "^1.35.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

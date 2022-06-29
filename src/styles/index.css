@@ -200,6 +200,20 @@ body {
   align-items: center;
   justify-content: center;
 }
+#main-info .pfp {
+  outline: #8fdd92 5px solid;
+  border-radius: 60%;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh 0;
+}
+#main-info .pfp img {
+  height: 80%;
+  width: 80%;
+}
 #main-info .info {
   display: flex;
   flex-direction: column;

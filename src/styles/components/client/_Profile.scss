@@ -6,6 +6,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  .pfp {
+    outline: $green 5px solid;
+    border-radius: 60%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh 0;
+    img {
+      height: 80%;
+      width: 80%;
+    }
+  }
   .info {
     display: flex;
     flex-direction: column;

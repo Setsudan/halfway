@@ -9,6 +9,7 @@ import { Recent } from "../../components/pages/Client/Recent";
 export const Index = () => {
   // on page load call supabase to get data from table shop
   const [data, setData] = useState([]);
+  // Await that we have the data to show the page
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     supabase
@@ -31,7 +32,13 @@ export const Index = () => {
     return (
       <main id="ClientHome">
         {
-          // Fake search bar
+          // Fake search bar, because we didn't have the
+          // will to make a search bar using supabase
+          // Could have been done with useEffect and useState
+          // On change of input, call the function to search
+          // then call the database and add a "where" clause
+          // Then retrieve the data and set it to the result useState
+          // then show all the result in a .map function
         }
         <div className="search-bar">
           <div className="searchbar-content">
@@ -41,8 +48,11 @@ export const Index = () => {
         </div>
         {/* <Category/> 
         Show different categories of shops */}
+        {/* Show nearby shops */}
         <Nearby data={data} />
+        {/* Show popular shops */}
         <Popular data={data} />
+        {/* Show Recently visited shops */}
         <Recent data={data} />
       </main>
     );
