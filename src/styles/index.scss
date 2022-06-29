@@ -25,53 +25,9 @@ body {
   height: 100vh;
   outline: $green 2px solid;
 }
-
-#ClientHome .search-bar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 15vh;
-  background: #8fdd92;
-}
-
-#ClientHome .search-bar .searchbar-content button {
-  border-radius: 18px;
-  height: 100%;
-  background-color: gray;
-  color: white;
-  cursor: pointer;
-  font-size: 11px;
-  padding: 0 6px;
-}
-
 .LogoTab img {
   width: 104px;
 }
-
-#ClientHome .search-bar .searchbar-content {
-  height: 50%;
-  width: 55%;
-  border: none;
-  border-radius: 18px;
-  background: #efefef;
-  padding-left: 2vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.loupe {
-  width: 20px;
-  margin-right: 10px;
-}
-
-.search-bar input {
-  width: 100%;
-}
-
-
-
 @import "./components/Auth";
 @import "./components/navbar";
 @import "./components/client/Home";

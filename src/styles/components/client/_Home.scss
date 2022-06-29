@@ -10,26 +10,38 @@
     align-items: center;
     justify-content: space-evenly;
     height: 15vh;
+    background: #8fdd92;
+    height: 15vh;
     .searchbar-content {
       height: 50%;
       width: 55%;
       border: none;
       border-radius: 18px;
-      background: $light;
+      background: #efefef;
       padding-left: 2vw;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      .loupe {
+        width: 20px;
+        margin-right: 10px;
+      }
       input,
       button {
         background: none;
         border: none;
       }
+      input {
+        width: 100%;
+      }
       button {
-        outline: $dark 2px solid;
         border-radius: 18px;
         height: 100%;
-        width: 100%;
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+        font-size: 11px;
+        padding: 0 6px;
       }
     }
     background: #8fdd92;
