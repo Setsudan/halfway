@@ -71,6 +71,21 @@ body {
   color: #efefef;
 }
 
+.navbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar a img {
+  height: 35px;
+  width: auto;
+}
+
 #ClientHome {
   display: flex;
   flex-direction: column;
@@ -150,17 +165,58 @@ body {
   opacity: 0.5;
 }
 
-.navbar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
+#Client-CommandList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  padding: 5vh 0;
+}
+#Client-CommandList h2 {
+  font-size: 1.5rem;
+}
+#Client-CommandList .command-list {
+  display: flex;
+  flex-direction: column;
+}
+#Client-CommandList .command-list .command-item {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+  margin: 2vh 0;
 }
-.navbar a img {
-  height: 35px;
-  width: auto;
+#Client-CommandList .command-list .command-item .command-item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-info {
+  height: 100vh;
+  width: 100%;
+  padding: 2vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#main-info .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#main-info .info input,
+#main-info .info button {
+  margin: 1vh 0;
+}
+#main-info .info input {
+  border: none;
+  background: none;
+  height: 2.5vh;
+  border-bottom: 2px solid #1d1d1d;
+}
+#main-info .info input:hover, #main-info .info input:focus {
+  border-bottom: 3px solid #8fdd92;
+  outline: none;
 }/*# sourceMappingURL=index.css.map */

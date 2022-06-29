@@ -11,13 +11,6 @@ export const Profile = () => {
     adress: "",
     password: "",
   });
-
-  const FirstName = "John";
-  const LastName = "Doe";
-  const Mail = "johndoe@gmail.com";
-  const Adress = "420 rue du poucet";
-  // A adapter pour que ce soit le bon format
-  // adapter pour qu'on recupere les données de l'utilisateur
   return (
     <>
       <main id="main-info">

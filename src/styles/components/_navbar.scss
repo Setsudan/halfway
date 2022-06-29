@@ -1,0 +1,16 @@
+.navbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  a {
+    img {
+      height: 35px;
+      width: auto;
+    }
+  }
+}
