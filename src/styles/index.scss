@@ -23,7 +23,7 @@ body {
   color: $dark;
   background: $light;
   height: 100vh;
-  outline: $green 2px solid;
+  //outline: $green 2px solid;
   margin: 0 2vw;
 }
 
@@ -33,4 +33,3 @@ body {
 @import "./components/client/CommandList";
 @import "./components/client/Profile";
 @import "./components/client/PersonnalCode";
-

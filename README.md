@@ -53,6 +53,8 @@ Application de livraison pour les petits commercant
 |     |-workflow (Deprecated)
 |- .vscode
 |     |-tasks.json -> Taches à utiliser pour le projet
+|- prisma
+|   |-> schema.prisma -> au cas ou supabase fonctionne pas
 |- public
 |     |-Fichiers nécéssaire pour le bon fonctionnement de la PWA
 |-src
@@ -127,15 +129,15 @@ VITE_DB_TOKEN=[Token dans le mail]
 ```
 ## Equipe 6
 
-| Nom    | Prénom   |
-| ------ | -------- |
-| Videau | Ethan    |
-| ---    | Rijenth  |
-| ---    | Kader    |
-| Ha     | Adrien   |
-| ---    | Mehdi    |
-| ---    | Farid    |
-| ---    | Fabrice  |
-| ---    | Valentin |
-| ---    | Arsène   |
-| ---    | Veljko   |
+| Nom      | Prénom   |
+| -------- | -------- |
+| Videau   | Ethan    |
+| ---      | Rijenth  |
+| Bakayoko | Gaossou  |
+| Ha       | Adrien   |
+| ---      | Mehdi    |
+| ---      | Farid    |
+| Pivert   | Fabrice  |
+| Lesoing  | Valentin |
+| ---      | Arsène   |
+| ---      | Veljko   |
