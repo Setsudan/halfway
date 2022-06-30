@@ -132,12 +132,12 @@ VITE_DB_TOKEN=[Token dans le mail]
 | Nom      | Prénom   |
 | -------- | -------- |
 | Videau   | Ethan    |
-| ---      | Rijenth  |
+| ARUMAINATHAN | Rijenth  |
 | Bakayoko | Gaossou  |
 | Ha       | Adrien   |
-| ---      | Mehdi    |
-| ---      | Farid    |
+| SOUCI      | Mehdi    |
+| BENAMARA      | Farid    |
 | Pivert   | Fabrice  |
 | Lesoing  | Valentin |
-| ---      | Arsène   |
-| ---      | Veljko   |
+| DOBROVOLSKYY       | Arsène   |
+| VOJINOVIC       | Veljko   |
